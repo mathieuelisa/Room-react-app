@@ -34,6 +34,12 @@
       font-family: "Roboto";
     }
   }
+
+  &--pictures {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 #shopnow {
@@ -57,4 +63,14 @@
   height: 58px;
   justify-content: space-between;
   width: 178px;
+}
+
+.pipo {
+  color: green;
+  margin-left: 10px;
+}
+
+.myLink {
+  margin-left: 20px;
+  color: whitesmoke;
 }

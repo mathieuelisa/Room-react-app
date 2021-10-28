@@ -1,6 +1,7 @@
 import "./styles.scss";
 
 import arrowLogo from "../../../Assets/Icons/icon-arrow.svg";
+import wallpaper from "../../../Assets/Img/homepage/desktop-image-hero-1.jpg";
 //Import fonts
 import "../../../Assets/Fonts/RobotoThing.ttf";
 import Header from "../Header";
@@ -9,7 +10,8 @@ function MainContainer() {
   return (
     <div className="home__first-container">
       <div className="home__first-container--firstBloc">
-        <Header />
+        <Header myMenu="pipo" myLink="myLink" />
+        <img className="home__first-container--pictures" src={wallpaper} />
       </div>
 
       <div className="home__first-container--secondBloc">
