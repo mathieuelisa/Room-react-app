@@ -10,7 +10,7 @@ function MainContainer() {
   return (
     <div className="home__first-container">
       <div className="home__first-container--firstBloc">
-        <Header myMenu="pipo" myLink="myLink" />
+        <Header myMenu="myLink__menu" myLink="myLink__menu-link" />
         <img className="home__first-container--pictures" src={wallpaper} />
       </div>
 
