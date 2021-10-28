@@ -1,0 +1,39 @@
+import "./styles.scss";
+
+import arrowLogo from "../../../Assets/Icons/icon-arrow.svg";
+//Import fonts
+import "../../../Assets/Fonts/RobotoThing.ttf";
+
+function MainContainer() {
+  return (
+    <div className="home__first-container">
+      <div className="home__first-container--firstBloc" id="slider"></div>
+
+      <div className="home__first-container--secondBloc">
+        <h2 className="home__first-container--secondBloc-title">
+          <span id="green-title">Decouvrez</span> des façons innovantes de
+          décorer
+        </h2>
+        <p className="home__first-container--secondBloc-text">
+          Ces dernières décennies, l’ameublement à su se renouveler et se
+          réinventer en s’ouvrant à d’autres disciplines. C’est ainsi que des
+          artistes contemporains ont été sollicités afin de collaborer avec nous
+          dans le cadre de collections originales et signées.
+        </p>
+        <div id="placement">
+          <p className="shop">
+            <a id="shopnow" href="/room/shop">
+              SHOP NOW
+            </a>
+          </p>
+
+          <div id="arrowDiv">
+            <img className="arrow" src={arrowLogo} alt="arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default MainContainer;
