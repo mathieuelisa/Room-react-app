@@ -1,7 +1,13 @@
 import MainContainer from "./MainContainer";
+import SecondContainer from "./SecondContainer";
 
 function HomePage() {
-  return <MainContainer />;
+  return (
+    <div>
+      <MainContainer />
+      <SecondContainer />
+    </div>
+  );
 }
 
 export default HomePage;
