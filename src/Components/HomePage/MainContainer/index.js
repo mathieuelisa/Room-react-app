@@ -3,11 +3,14 @@ import "./styles.scss";
 import arrowLogo from "../../../Assets/Icons/icon-arrow.svg";
 //Import fonts
 import "../../../Assets/Fonts/RobotoThing.ttf";
+import Header from "../Header";
 
 function MainContainer() {
   return (
     <div className="home__first-container">
-      <div className="home__first-container--firstBloc" id="slider"></div>
+      <div className="home__first-container--firstBloc">
+        <Header />
+      </div>
 
       <div className="home__first-container--secondBloc">
         <h2 className="home__first-container--secondBloc-title">
