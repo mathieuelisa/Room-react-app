@@ -1,7 +1,8 @@
+import MainContainer from "./MainContainer";
 import "./styles.scss";
 
 function AboutPage() {
-  return <h1>About page</h1>;
+  return <MainContainer />;
 }
 
 export default AboutPage;

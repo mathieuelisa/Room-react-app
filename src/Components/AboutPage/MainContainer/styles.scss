@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Dolce Vita";
+  src: url("../../../Assets/Fonts/Dolce\ Vita.ttf");
+}
+
+.mainBloc-about {
+  height: 100vh;
+  font-size: 10px;
+  background-image: url("../../../Assets/Img/aboutpage/main-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+#citation {
+  width: 309px;
+  height: 20%;
+  margin: 130px 50px 0 214px;
+}
+
+#title-citation {
+  color: whitesmoke;
+  font-size: 1.2vw;
+  letter-spacing: 1px;
+  font-family: "Dolce Vita";
+}
