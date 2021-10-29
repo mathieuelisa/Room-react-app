@@ -7,7 +7,7 @@ import "../../../Assets/Fonts/Dolce Vita.ttf";
 
 function MainContainer() {
   return (
-    <div class="mainBloc-about">
+    <div className="mainBloc-about">
       <Header
         myMenu="myLink__menu"
         myLink="myLink__menu-link"

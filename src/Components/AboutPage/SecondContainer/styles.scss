@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Resotho-Extralight";
+  src: url("../../../Assets/Fonts/Resotho-Extralight.otf");
+}
+
+@font-face {
+  font-family: "RobotoThing";
+  src: url("../../../Assets/Fonts/Resotho-Extralight.otf");
+}
+
+.text-bloc {
+  height: 606px;
+  display: flex;
+  width: 100%;
+  color: whitesmoke;
+  background-color: #232323;
+}
+
+.container-card {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #232323;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-bloc2 {
+  position: relative;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-bloc2 {
+  position: relative;
+  top: 178px;
+  font-family: "Resotho-Extralight";
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+.text_bloc2 {
+  position: relative;
+  top: 189px;
+  padding-right: 55px;
+  line-height: 20px;
+  font-size: 13px;
+  font-family: "Roboto";
+}
