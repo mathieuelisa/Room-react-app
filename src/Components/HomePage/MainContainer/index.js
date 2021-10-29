@@ -1,9 +1,11 @@
 import "./styles.scss";
-
+// Import Icons and Img
 import arrowLogo from "../../../Assets/Icons/icon-arrow.svg";
 import wallpaper from "../../../Assets/Img/homepage/desktop-image-hero-1.jpg";
 //Import fonts
 import "../../../Assets/Fonts/RobotoThing.ttf";
+import "../../../Assets/Fonts/Moonglade.ttf";
+// Import components
 import Header from "../Header";
 
 function MainContainer() {
