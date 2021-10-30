@@ -1,19 +1,19 @@
 import "./styles.scss";
 
-function Avatar({ job, name, description, image }) {
+function Avatar({ job, name, description, image, classNameWork }) {
   return (
     <div className="container-profil">
-      <div className="profil-card">
-        <img className="myPics" src={image} alt="profil1" />
+      <div className="container-profil-card">
+        <img className="container-profil-pics" src={image} alt="profil1" />
 
-        <div className="title-work">{job}</div>
+        <div className={classNameWork}>{job}</div>
       </div>
 
-      <div className="title-card">
+      <div className="container-profil-titleCard">
         <h3>{name}</h3>
       </div>
 
-      <div className="text-card">
+      <div className="container-profil-description">
         <p>{description}</p>
       </div>
     </div>

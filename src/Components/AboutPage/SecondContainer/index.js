@@ -17,6 +17,7 @@ function SecondContainer() {
               She holds a passion for innovating with material and form and introduces traditional crafting 
               techniques from artisans across the world into her work."
           image={firstPics}
+          classNameWork="title-work"
         />
 
         {/* Avatars 2 */}
@@ -26,6 +27,7 @@ function SecondContainer() {
           description="Arsene designs precision, handcrafted furniture pieces, 
               having built a career on combining a mechanical engineering with his flair for artistic creativity."
           image={secondPics}
+          classNameWork="title-work2"
         />
       </div>
 

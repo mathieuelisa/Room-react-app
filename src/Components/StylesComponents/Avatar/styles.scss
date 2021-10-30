@@ -2,50 +2,61 @@
   margin-top: 10px;
   width: 200px;
   background-color: #232323;
-}
 
-.profil-card {
-  margin: 0 auto;
-  margin-top: 10px;
-  height: 170px;
-  width: 170px;
-  overflow: hidden;
-  border-radius: 8px;
-}
+  &-card {
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 170px;
+    width: 170px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
 
-.myPics {
-  height: 136%;
-  width: 100%;
-  transition: 0.5s all ease-in-out;
-  object-fit: cover;
-}
+  &-pics {
+    height: 136%;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+    object-fit: cover;
 
-.myPics:hover {
-  transform: scale(1.2);
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &-titleCard {
+    font-family: "Dolce Vita";
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 2px;
+  }
+
+  &-description {
+    background-color: #232323;
+    height: 200px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+    font-family: "Roboto";
+  }
 }
 
 .title-work {
   transform: rotate(90deg);
   position: relative;
-  top: -106px;
+  top: -135px;
   right: -67px;
+  font-size: 1.3em;
   font-family: "Hijrnotes";
 }
 
-.title-card {
-  font-family: "Dolce Vita";
-  text-align: center;
-  margin-top: 15px;
-  letter-spacing: 2px;
-}
-
-.text-card {
-  background-color: #232323;
-  height: 200px;
-  margin-top: 20px;
-  text-align: center;
-  font-size: 13px;
-  line-height: 20px;
-  text-align: justify;
-  font-family: "Roboto";
+.title-work2 {
+  transform: rotate(-90deg);
+  position: relative;
+  top: -215px;
+  right: 68px;
+  color: black;
+  font-size: 1.3em;
+  font-family: "Hijrnotes";
 }
