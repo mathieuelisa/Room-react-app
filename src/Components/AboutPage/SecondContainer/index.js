@@ -4,11 +4,12 @@ import "../../../Assets/Fonts/Resotho-Extralight.otf";
 import Avatar from "../../StylesComponents/Avatar";
 
 import firstPics from "../../../Assets/Img/aboutpage/profil1.jpg";
-
+import secondPics from "../../../Assets/Img/aboutpage/profil2.jpg";
 function SecondContainer() {
   return (
     <div className="text-bloc">
       <div className="container-card">
+        {/* Avatars 1 */}
         <Avatar
           job="Manager"
           name="Yasmina Gonzalez"
@@ -16,6 +17,15 @@ function SecondContainer() {
               She holds a passion for innovating with material and form and introduces traditional crafting 
               techniques from artisans across the world into her work."
           image={firstPics}
+        />
+
+        {/* Avatars 2 */}
+        <Avatar
+          job="Designer"
+          name="Arsene Durand"
+          description="Arsene designs precision, handcrafted furniture pieces, 
+              having built a career on combining a mechanical engineering with his flair for artistic creativity."
+          image={secondPics}
         />
       </div>
 
