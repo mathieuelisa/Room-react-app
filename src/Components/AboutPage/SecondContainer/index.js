@@ -1,11 +1,23 @@
 import "./styles.scss";
 // Import fonts
 import "../../../Assets/Fonts/Resotho-Extralight.otf";
+import Avatar from "../../StylesComponents/Avatar";
+
+import firstPics from "../../../Assets/Img/aboutpage/profil1.jpg";
 
 function SecondContainer() {
   return (
     <div className="text-bloc">
-      <div className="container-card"></div>
+      <div className="container-card">
+        <Avatar
+          job="Manager"
+          name="Yasmina Gonzalez"
+          description="Yasmina is a qualified industrial and interior designer with over a decade of experience.
+              She holds a passion for innovating with material and form and introduces traditional crafting 
+              techniques from artisans across the world into her work."
+          image={firstPics}
+        />
+      </div>
 
       <div className="container-bloc2">
         <div className="title-bloc2">
