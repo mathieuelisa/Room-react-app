@@ -3,7 +3,7 @@
   src: url("../../../Assets/Fonts/Dolce\ Vita.ttf");
 }
 
-.mainBloc-about {
+.mainBloc {
   height: 100vh;
   font-size: 10px;
   background-image: url("../../../Assets/Img/aboutpage/main-image.jpg");
@@ -11,17 +11,17 @@
   background-position: center;
   background-size: cover;
   display: flex;
-}
 
-#citation {
-  width: 309px;
-  height: 20%;
-  margin: 130px 50px 0 214px;
-}
+  &-citation {
+    width: 320px;
+    height: 20%;
+    margin: 119px 9px 30px 301px;
 
-#title-citation {
-  color: whitesmoke;
-  font-size: 1.2vw;
-  letter-spacing: 1px;
-  font-family: "Dolce Vita";
+    &-title {
+      color: whitesmoke;
+      font-size: 1.3em;
+      letter-spacing: 1px;
+      font-family: "Dolce Vita";
+    }
+  }
 }

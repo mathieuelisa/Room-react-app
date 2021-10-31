@@ -7,14 +7,14 @@ import "../../../Assets/Fonts/Dolce Vita.ttf";
 
 function MainContainer() {
   return (
-    <div className="mainBloc-about">
+    <div className="mainBloc">
       <Header
         myMenu="myLink__menu"
         myLink="myLink__menu-link"
         myMenuLogo="myMenuLogo"
       />
-      <div id="citation">
-        <h2 data-scroll data-scroll-speed="2" id="title-citation">
+      <div className="mainBloc-citation">
+        <h2 className="mainBloc-citation-title">
           J’aime explorer des domaines qui me font peur. Lorsque j’ai peur, je
           sais que je vais dans la bonne direction...
         </h2>
