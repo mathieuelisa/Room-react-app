@@ -5,23 +5,28 @@
 
 .mainBloc {
   height: 100vh;
-  font-size: 10px;
   background-image: url("../../../Assets/Img/aboutpage/main-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
+  font-size: 10px;
 
   &-citation {
     width: 320px;
     height: 20%;
-    margin: 119px 9px 30px 301px;
+    margin: 113px 9px 30px 168px;
 
     &-title {
       color: whitesmoke;
-      font-size: 1.3em;
+      font-size: 1.4em;
       letter-spacing: 1px;
       font-family: "Dolce Vita";
     }
   }
+}
+
+.final-picture-bloc-citation--name {
+  font-family: "Hijrnotes";
+  font-size: 1.7em;
 }
