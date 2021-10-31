@@ -18,7 +18,7 @@ function MainContainer() {
           J’aime explorer des domaines qui me font peur. Lorsque j’ai peur, je
           sais que je vais dans la bonne direction...
         </h2>
-        <p>Mathieu Elisa</p>
+        <p className="final-picture-bloc-citation--name">Mathieu Elisa</p>
       </div>
     </div>
   );

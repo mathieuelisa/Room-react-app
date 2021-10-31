@@ -1,0 +1,44 @@
+.picture-bloc {
+  height: 100vh;
+  background-image: url("../../../Assets/Img/aboutpage/second-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.final-picture-bloc {
+  height: 100vh;
+  font-size: 1em;
+  background-image: url("../../../Assets/Img/aboutpage/third-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  &-citation {
+    width: 309px;
+    position: relative;
+    top: 101px;
+    left: 146px;
+
+    &--title {
+      color: whitesmoke;
+      font-size: 1.2vw;
+      letter-spacing: 1px;
+      font-family: "Dolce Vita";
+    }
+
+    &--name {
+      font-family: "Hijrnotes";
+      font-size: 2em;
+    }
+  }
+}
+
+#title-citation {
+  color: whitesmoke;
+  font-size: 1.2vw;
+  letter-spacing: 1px;
+  font-family: "Dolce Vita";
+}
