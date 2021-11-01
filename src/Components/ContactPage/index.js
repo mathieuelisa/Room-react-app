@@ -1,12 +1,15 @@
+import "./styles.scss";
+// Import components
 import MainContainer from "./MainContainer";
 import SecondContainer from "./SecondContainer";
-import "./styles.scss";
+import ThirdContainer from "./ThirdContainer";
 
 function ContactPage() {
   return (
     <>
       <MainContainer />
       <SecondContainer />
+      <ThirdContainer />
     </>
   );
 }
