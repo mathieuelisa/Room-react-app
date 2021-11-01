@@ -1,7 +1,11 @@
+// Import styles
 import "./App.scss";
+// Import components
 import HomePage from "../HomePage";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
 import AboutPage from "../AboutPage";
+import ContactPage from "../ContactPage";
+
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -14,6 +18,10 @@ function App() {
 
           <Route path="/about" exact>
             <AboutPage />
+          </Route>
+
+          <Route path="/contact" exact>
+            <ContactPage />
           </Route>
         </Switch>
       </BrowserRouter>
