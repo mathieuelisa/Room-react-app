@@ -3,34 +3,34 @@ import "./styles.scss";
 function Form() {
   return (
     <form className="formulaire">
-      <div>
-        <label>Nom: </label>
+      <div className="formulaire__input">
+        <label className="formulaire__label">Nom: </label>
         <input />
       </div>
 
-      <div>
-        <label>Prenom: </label>
+      <div className="formulaire__input">
+        <label className="formulaire__label">Prenom: </label>
         <input />
       </div>
 
-      <div>
-        <label>Telephone: </label>
+      <div className="formulaire__input">
+        <label className="formulaire__label">Telephone: </label>
         <input />
       </div>
 
-      <div>
-        <label>Email: </label>
+      <div className="formulaire__input">
+        <label className="formulaire__label">Email: </label>
         <input />
       </div>
 
-      <div>
-        <label>Magasin: </label>
+      <div className="formulaire__input">
+        <label className="formulaire__label">Magasin: </label>
         <input />
       </div>
 
-      <div>
-        <label>Commentaire: </label>
-        <input />
+      <div className="formulaire__input">
+        <label className="formulaire__label">Commentaire: </label>
+        <textarea />
       </div>
     </form>
   );
