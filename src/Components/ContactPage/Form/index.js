@@ -1,37 +1,87 @@
+import { useState } from "react";
 import "./styles.scss";
 
 function Form() {
+  const [myState, setMyState] = useState({
+    lastname: "",
+    firstname: "",
+    phone: "",
+    email: "",
+    commentaires: "",
+  });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
+  function handleChange(e) {
+    e.preventDefault();
+
+    setMyState({
+      ...myState,
+      [e.target.name]: e.target.value,
+    });
+
+    console.log(myState);
+  }
+
   return (
-    <form className="formulaire">
+    <form className="formulaire" onSubmit={handleSubmit}>
       <div className="formulaire__input">
         <label className="formulaire__label">Nom: </label>
-        <input />
+        <input
+          type="text"
+          name="lastname"
+          value={myState.lastname}
+          onChange={handleChange}
+        />
       </div>
 
       <div className="formulaire__input">
         <label className="formulaire__label">Prenom: </label>
-        <input />
+        <input
+          type="text"
+          name="firstname"
+          value={myState.firstname}
+          onChange={handleChange}
+        />
       </div>
 
       <div className="formulaire__input">
         <label className="formulaire__label">Telephone: </label>
-        <input />
+        <input
+          type="tel"
+          name="phone"
+          value={myState.phone}
+          onChange={handleChange}
+        />
       </div>
 
       <div className="formulaire__input">
         <label className="formulaire__label">Email: </label>
-        <input />
+        <input
+          type="email"
+          name="email"
+          value={myState.email}
+          onChange={handleChange}
+        />
       </div>
 
       <div className="formulaire__input">
         <label className="formulaire__label">Magasin: </label>
-        <input />
+        <input type="text" />
       </div>
 
       <div className="formulaire__input">
         <label className="formulaire__label">Commentaire: </label>
-        <textarea />
+        <textarea
+          type="text"
+          name="commentaires"
+          value={myState.commentaires}
+          onChange={handleChange}
+        />
       </div>
+      <button type="submit">Valide</button>
     </form>
   );
 }

@@ -2,12 +2,12 @@ import "./styles.scss";
 
 function ThirdContainer() {
   return (
-    <div class="home__third-container">
-      <div class="home__third-container--right"></div>
+    <div className="home__third-container">
+      <div className="home__third-container--right"></div>
 
-      <div class="home__third-container--left">
-        <h1 class="home--title">CONCERNANT NOTRE SAVOIR-FAIRE</h1>
-        <p class="home--text">
+      <div className="home__third-container--left">
+        <h1 className="home--title">CONCERNANT NOTRE SAVOIR-FAIRE</h1>
+        <p className="home--text">
           Spécialisés dans les décos intérieurs suédoises, nous sommes à même de
           vous proposer des produits de qualités qui répondent parfaitement avec
           vos attentes. Le savoir faire allié à l'élégance de nos meubles
