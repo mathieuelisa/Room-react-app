@@ -11,7 +11,31 @@
   }
 
   &__label {
+    margin-left: 60px;
+    margin-top: 40px;
+    font-family: "Questrial", sans-serif;
+    display: flex;
     color: whitesmoke;
+    font-size: 1em;
+  }
+
+  &__allInputs {
+    border: none;
+    margin: 13px 0 15px 59px;
+    font-family: "Questrial", sans-serif;
+    width: 75%;
+    background-color: transparent;
+    border-bottom: 1px solid whitesmoke;
+    color: whitesmoke;
+    font-size: 1.4em;
+  }
+
+  &__textArea {
+    width: 75%;
+    font-family: "Questrial", sans-serif;
+    line-height: 23px;
+    margin-top: 30px;
+    padding: 20px;
     font-size: 1em;
   }
 

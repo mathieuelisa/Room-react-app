@@ -32,6 +32,7 @@ function Form() {
         <label className="formulaire__label">Nom: </label>
         <input
           type="text"
+          className="formulaire__allInputs"
           name="lastname"
           value={myState.lastname}
           onChange={handleChange}
@@ -42,6 +43,7 @@ function Form() {
         <label className="formulaire__label">Prenom: </label>
         <input
           type="text"
+          className="formulaire__allInputs"
           name="firstname"
           value={myState.firstname}
           onChange={handleChange}
@@ -52,6 +54,7 @@ function Form() {
         <label className="formulaire__label">Telephone: </label>
         <input
           type="tel"
+          className="formulaire__allInputs"
           name="phone"
           value={myState.phone}
           onChange={handleChange}
@@ -62,6 +65,7 @@ function Form() {
         <label className="formulaire__label">Email: </label>
         <input
           type="email"
+          className="formulaire__allInputs"
           name="email"
           value={myState.email}
           onChange={handleChange}
@@ -85,6 +89,7 @@ function Form() {
         <label className="formulaire__label">Commentaire: </label>
         <textarea
           type="text"
+          className="formulaire__textArea"
           name="commentaires"
           value={myState.commentaires}
           onChange={handleChange}
