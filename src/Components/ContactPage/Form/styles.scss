@@ -14,4 +14,26 @@
     color: whitesmoke;
     font-size: 1em;
   }
+
+  &__button-valide {
+    display: block;
+    width: 152px;
+    height: 32px;
+    background-color: rgb(71, 71, 91);
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Questrial", sans-serif;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: 1s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
 }

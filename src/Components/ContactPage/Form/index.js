@@ -7,6 +7,7 @@ function Form() {
     firstname: "",
     phone: "",
     email: "",
+    shop: "",
     commentaires: "",
   });
 
@@ -69,7 +70,15 @@ function Form() {
 
       <div className="formulaire__input">
         <label className="formulaire__label">Magasin: </label>
-        <input type="text" />
+        <select name="shop" onChange={handleChange} value={myState.shop}>
+          <option>--Choissisez votre magasin--</option>
+          <option>Paris Sud - Evry</option>
+          <option>Paris Sud - Thiais</option>
+          <option>Paris Est - Villiers sur Marne</option>
+          <option>Paris Ouest - Plaisir</option>
+          <option>Paris Nord - Roissy</option>
+          <option>Lyon - Grand Parilly</option>
+        </select>
       </div>
 
       <div className="formulaire__input">
@@ -81,7 +90,9 @@ function Form() {
           onChange={handleChange}
         />
       </div>
-      <button type="submit">Valide</button>
+      <button className="formulaire__button-valide" type="submit">
+        Valide
+      </button>
     </form>
   );
 }
