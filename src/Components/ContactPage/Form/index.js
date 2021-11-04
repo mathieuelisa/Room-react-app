@@ -74,9 +74,14 @@ function Form() {
           />
         </div>
 
-        <div className="formulaire__input">
+        <div className="formulaire__input-shop">
           <label className="formulaire__label">Magasin: </label>
-          <select name="shop" onChange={handleChange} value={myState.shop}>
+          <select
+            className="formulaire__label-select"
+            name="shop"
+            onChange={handleChange}
+            value={myState.shop}
+          >
             <option>--Choissisez votre magasin--</option>
             <option>Paris Sud - Evry</option>
             <option>Paris Sud - Thiais</option>
@@ -87,8 +92,10 @@ function Form() {
           </select>
         </div>
 
-        <div className="formulaire__input">
-          <label className="formulaire__label">Commentaire: </label>
+        <div className="formulaire__input-textAreaInput">
+          <label className="formulaire__label-textAreaInput">
+            Commentaire:{" "}
+          </label>
           <textarea
             type="text"
             className="formulaire__textArea"
@@ -97,6 +104,7 @@ function Form() {
             onChange={handleChange}
           />
         </div>
+        <p>couou</p>
         <button className="formulaire__button-valide" type="submit">
           Valide
         </button>
