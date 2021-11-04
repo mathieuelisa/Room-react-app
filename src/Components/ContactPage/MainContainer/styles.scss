@@ -26,3 +26,9 @@
     text-align: justify;
   }
 }
+
+@media screen and (max-width: 945px) {
+  .mainContainer__contact-text {
+    padding: 53px;
+  }
+}

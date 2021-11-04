@@ -99,3 +99,17 @@
     }
   }
 }
+
+@media screen and (max-width: 945px) {
+  .formulaire {
+    width: 88%;
+
+    &__label {
+      margin-left: 20px;
+    }
+
+    &__allInputs {
+      font-size: 0.8em;
+    }
+  }
+}
