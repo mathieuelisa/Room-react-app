@@ -1,13 +1,15 @@
 import "./styles.scss";
 // Import Icons and Img
 import arrowLogo from "../../../Assets/Icons/icon-arrow.svg";
-import wallpaper from "../../../Assets/Img/homepage/desktop-image-hero-1.jpg";
+import wallpaper1 from "../../../Assets/Img/homepage/desktop-image-hero-1.jpg";
+
 //Import fonts
 import "../../../Assets/Fonts/RobotoThing.ttf";
 import "../../../Assets/Fonts/Moonglade.ttf";
 import "../../../Assets/Fonts/Hijrnotes.ttf";
 // Import components
 import Header from "../Header";
+import images from "../myImage";
 
 function MainContainer() {
   return (
@@ -18,7 +20,7 @@ function MainContainer() {
           myLink="myLink__menu-link"
           myMenuLogo="myMenuLogo"
         />
-        <img className="home__first-container--pictures" src={wallpaper} />
+        <img className="home__first-container--pictures" src={wallpaper1} />
       </div>
 
       <div className="home__first-container--secondBloc">
@@ -32,6 +34,17 @@ function MainContainer() {
           artistes contemporains ont été sollicités afin de collaborer avec nous
           dans le cadre de collections originales et signées.
         </p>
+
+        {images.map(({ id, src, title, description }) => (
+          <img
+            className="home__first-container--pictures"
+            key={id}
+            src={src}
+            title={title}
+            alt={description}
+          />
+        ))}
+
         <div id="placement">
           <p className="shop">
             <a id="shopnow" href="/room/shop">
