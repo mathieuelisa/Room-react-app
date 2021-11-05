@@ -1,18 +1,25 @@
 import firstpics from "../../Assets/Img/homepage/desktop-pics1.jpg";
 import secondpics from "../../Assets/Img/homepage/desktop-pics2.jpg";
+import thirdpics from "../../Assets/Img/homepage/desktop-image-hero-1.jpg";
 
 const images = [
   {
     id: 1,
     src: firstpics,
-    title: "foo",
-    description: "bar",
+    title: "firstPics",
+    description: "Pictures for carrousel",
   },
   {
     id: 2,
     src: secondpics,
-    title: "foofoo",
-    description: "barbar",
+    title: "secondPics",
+    description: "Pictures for carrousel",
+  },
+  {
+    id: 3,
+    src: thirdpics,
+    title: "thirdPics",
+    description: "Pictures for carrousel",
   },
 ];
 

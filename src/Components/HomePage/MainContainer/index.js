@@ -1,8 +1,8 @@
 import "./styles.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // Import Icons and Img
 import arrowLogo from "../../../Assets/Icons/icon-arrow.svg";
-import wallpaper1 from "../../../Assets/Img/homepage/desktop-image-hero-1.jpg";
-
 //Import fonts
 import "../../../Assets/Fonts/RobotoThing.ttf";
 import "../../../Assets/Fonts/Moonglade.ttf";
@@ -10,6 +10,20 @@ import "../../../Assets/Fonts/Hijrnotes.ttf";
 // Import components
 import Header from "../Header";
 import images from "../myImage";
+// Import component React slick Carroussel
+import Slider from "react-slick";
+
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: true,
+  autoplay: true,
+  speed: 2000,
+  autoplaySpeed: 6000,
+};
 
 function MainContainer() {
   return (
@@ -20,7 +34,21 @@ function MainContainer() {
           myLink="myLink__menu-link"
           myMenuLogo="myMenuLogo"
         />
-        <img className="home__first-container--pictures" src={wallpaper1} />
+
+        <div className="pipo">
+          {/* React slick carrousel */}
+          <Slider {...settings}>
+            {images.map(({ id, src, title, description }) => (
+              <img
+                className="home__first-container--pictures"
+                key={id}
+                src={src}
+                title={title}
+                alt={description}
+              />
+            ))}
+          </Slider>
+        </div>
       </div>
 
       <div className="home__first-container--secondBloc">
@@ -34,16 +62,6 @@ function MainContainer() {
           artistes contemporains ont été sollicités afin de collaborer avec nous
           dans le cadre de collections originales et signées.
         </p>
-
-        {images.map(({ id, src, title, description }) => (
-          <img
-            className="home__first-container--pictures"
-            key={id}
-            src={src}
-            title={title}
-            alt={description}
-          />
-        ))}
 
         <div id="placement">
           <p className="shop">
