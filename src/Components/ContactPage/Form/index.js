@@ -1,4 +1,5 @@
 import { useState } from "react";
+// Import styles
 import "./styles.scss";
 
 function Form() {
@@ -10,6 +11,8 @@ function Form() {
     shop: "",
     commentaires: "",
   });
+  // Text characters remaining
+  const [textLength, setTextLength] = useState(220);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -24,6 +27,10 @@ function Form() {
     });
 
     console.log(myState);
+
+    if (e.target.name === "commentaires") {
+      setTextLength(220 - e.target.value.length);
+    }
   }
 
   return (
@@ -104,7 +111,17 @@ function Form() {
             onChange={handleChange}
           />
         </div>
-        <p>couou</p>
+
+        {textLength > 50 ? (
+          <p className="formulaire__textArea-textRemaining">
+            {textLength} characters remaining
+          </p>
+        ) : (
+          <p className="formulaire__textArea-warning">
+            {textLength} characters remaining
+          </p>
+        )}
+
         <button className="formulaire__button-valide" type="submit">
           Valide
         </button>
