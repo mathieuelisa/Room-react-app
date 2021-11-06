@@ -12,6 +12,7 @@ import Header from "../Header";
 import images from "../myImage";
 // Import component React slick Carroussel
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 const settings = {
   dots: false,
@@ -65,9 +66,9 @@ function MainContainer() {
 
         <div id="placement">
           <p className="shop">
-            <a id="shopnow" href="/room/shop">
+            <Link id="shopnow" to="/shop">
               SHOP NOW
-            </a>
+            </Link>
           </p>
 
           <div id="arrowDiv">
