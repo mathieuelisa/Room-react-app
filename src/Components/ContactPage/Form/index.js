@@ -1,6 +1,8 @@
 import { useState } from "react";
 // Import styles
 import "./styles.scss";
+// Import Input validator
+import validator from "validator";
 
 function Form() {
   const [myState, setMyState] = useState({
@@ -13,6 +15,7 @@ function Form() {
   });
   // Text characters remaining
   const [textLength, setTextLength] = useState(220);
+  const [emailError, setEmailError] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -30,6 +33,14 @@ function Form() {
 
     if (e.target.name === "commentaires") {
       setTextLength(220 - e.target.value.length);
+    }
+
+    if (e.target.name === "email") {
+      if (validator.isEmail(e.target.value)) {
+        setEmailError("Valide");
+      } else {
+        setEmailError("Not valid");
+      }
     }
   }
 
@@ -80,6 +91,8 @@ function Form() {
             onChange={handleChange}
           />
         </div>
+
+        <span style={{ color: "red" }}>{emailError}</span>
 
         <div className="formulaire__input-shop">
           <label className="formulaire__label">Magasin: </label>
