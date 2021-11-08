@@ -37,9 +37,9 @@ function Form() {
 
     if (e.target.name === "email") {
       if (validator.isEmail(e.target.value)) {
-        setEmailError("Valide");
+        setEmailError("");
       } else {
-        setEmailError("Not valid");
+        setEmailError("Email non valide");
       }
     }
   }
@@ -92,7 +92,7 @@ function Form() {
           />
         </div>
 
-        <span style={{ color: "red" }}>{emailError}</span>
+        <p className="formulaire__emailError">{emailError}</p>
 
         <div className="formulaire__input-shop">
           <label className="formulaire__label">Magasin: </label>
@@ -136,7 +136,7 @@ function Form() {
         )}
 
         <button className="formulaire__button-valide" type="submit">
-          Valide
+          Envoyé
         </button>
       </form>
     </>

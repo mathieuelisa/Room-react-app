@@ -57,6 +57,11 @@
     }
   }
 
+  &__emailError {
+    color: red;
+    text-align: center;
+  }
+
   &__allInputs {
     border: none;
     margin: 13px 0 15px 59px;

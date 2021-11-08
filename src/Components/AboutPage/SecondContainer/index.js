@@ -2,9 +2,12 @@ import "./styles.scss";
 // Import fonts
 import "../../../Assets/Fonts/Resotho-Extralight.otf";
 import Avatar from "../../StylesComponents/Avatar";
-
+// Impors pictures
 import firstPics from "../../../Assets/Img/aboutpage/profil1.jpg";
 import secondPics from "../../../Assets/Img/aboutpage/profil2.jpg";
+// Import react reveal
+import Fade from "react-reveal/Fade";
+
 function SecondContainer() {
   return (
     <div className="text-bloc">
@@ -30,27 +33,30 @@ function SecondContainer() {
           classNameWork="title-work2"
         />
       </div>
-
       <div className="container-bloc2">
-        <div className="title-bloc2">
-          <h2>DESIGN_</h2>
-        </div>
+        <Fade bottom duration={2000}>
+          <div className="title-bloc2">
+            <h2>DESIGN_</h2>
+          </div>
+        </Fade>
 
-        <div className="text_bloc2">
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. <br />
-            <br /> Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur.
-            <br /> Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
+        <Fade bottom duration={2000} delay={500}>
+          <div className="text_bloc2">
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. <br />
+              <br /> Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur.
+              <br /> Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </Fade>
       </div>
     </div>
   );
