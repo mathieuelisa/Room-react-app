@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./styles.scss";
 // Import Input validator
 import validator from "validator";
+import { db } from "../../../firebase";
 
 function Form() {
   const [myState, setMyState] = useState({
@@ -19,6 +20,23 @@ function Form() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    // Adding new contact on firebase
+    db.collection("contacts")
+      .add({
+        lastname: myState.lastname,
+        firstname: myState.firstname,
+        email: myState.email,
+        phone: myState.phone,
+        shop: myState.shop,
+        commentaires: myState.commentaires,
+      })
+      .then(() => {
+        alert("Message has been submitted");
+      })
+      .catch((err) => {
+        alert(err.message);
+      });
   }
 
   function handleChange(e) {
@@ -30,6 +48,8 @@ function Form() {
     });
 
     console.log(myState);
+
+    console.log("pour le last name ", myState.lastname);
 
     if (e.target.name === "commentaires") {
       setTextLength(220 - e.target.value.length);
@@ -56,6 +76,7 @@ function Form() {
             name="lastname"
             value={myState.lastname}
             onChange={handleChange}
+            placeholder="Nom"
           />
         </div>
 
@@ -67,6 +88,7 @@ function Form() {
             name="firstname"
             value={myState.firstname}
             onChange={handleChange}
+            placeholder="Prenom"
           />
         </div>
 
@@ -78,6 +100,7 @@ function Form() {
             name="phone"
             value={myState.phone}
             onChange={handleChange}
+            placeholder="Telephone"
           />
         </div>
 
@@ -89,6 +112,7 @@ function Form() {
             name="email"
             value={myState.email}
             onChange={handleChange}
+            placeholder="Email"
           />
         </div>
 
@@ -122,6 +146,7 @@ function Form() {
             name="commentaires"
             value={myState.commentaires}
             onChange={handleChange}
+            placeholder="Message"
           />
         </div>
 

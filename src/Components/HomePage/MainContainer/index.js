@@ -17,7 +17,6 @@ import { Link } from "react-router-dom";
 const settings = {
   dots: false,
   infinite: true,
-  speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
   fade: true,

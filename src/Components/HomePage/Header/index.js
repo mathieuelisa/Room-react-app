@@ -10,7 +10,7 @@ function Header({ myMenu, myLink, myMenuLogo }) {
 
   return (
     <div className={myMenu}>
-      <img className={myMenuLogo} src={Logo} />
+      <img className={myMenuLogo} src={Logo} alt="logo" />
       <NavLink className={myLink} to="/" exact>
         HOME
       </NavLink>
