@@ -73,6 +73,10 @@
     text-align: center;
   }
 
+  .home--text {
+    text-align: justify;
+  }
+
   .home__second-container_right--title {
     margin-bottom: 20px;
     font-size: 1em;
@@ -81,6 +85,10 @@
 
   .home__first-container--secondBloc {
     padding: 44px;
+
+    &-text {
+      text-align: justify;
+    }
   }
 }
 

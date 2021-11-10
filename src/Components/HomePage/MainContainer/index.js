@@ -13,6 +13,8 @@ import images from "../myImage";
 // Import component React slick Carroussel
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+// Import react reveal
+import Fade from "react-reveal/Fade";
 
 const settings = {
   dots: false,
@@ -52,10 +54,12 @@ function MainContainer() {
       </div>
 
       <div className="home__first-container--secondBloc">
-        <h2 className="home__first-container--secondBloc-title">
-          <span id="green-title">Decouvrez</span> des façons innovantes de
-          décorer
-        </h2>
+        <Fade right duration={2000}>
+          <h2 className="home__first-container--secondBloc-title">
+            <span id="green-title">Decouvrez</span> des façons innovantes de
+            décorer
+          </h2>
+        </Fade>
         <p className="home__first-container--secondBloc-text">
           Ces dernières décennies, l’ameublement à su se renouveler et se
           réinventer en s’ouvrant à d’autres disciplines. C’est ainsi que des
