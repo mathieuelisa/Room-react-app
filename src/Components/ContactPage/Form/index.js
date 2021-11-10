@@ -5,6 +5,8 @@ import "./styles.scss";
 import validator from "validator";
 import { db } from "../../../firebase";
 
+import logoDownload from "../../../Assets/Icons/loader.gif";
+
 function Form() {
   const [myState, setMyState] = useState({
     lastname: "",
@@ -17,10 +19,12 @@ function Form() {
   // Text characters remaining
   const [textLength, setTextLength] = useState(220);
   const [emailError, setEmailError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [messageSubmitted, setMessageSubmitted] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
-
+    setIsLoading(true);
     // Adding new contact on firebase
     db.collection("contacts")
       .add({
@@ -32,7 +36,17 @@ function Form() {
         commentaires: myState.commentaires,
       })
       .then(() => {
-        alert("Message has been submitted");
+        console.log("Message has been submitted");
+        setMessageSubmitted(true);
+        setIsLoading(false);
+        setMyState({
+          lastname: "",
+          firstname: "",
+          phone: "",
+          email: "",
+          shop: "",
+          commentaires: "",
+        });
       })
       .catch((err) => {
         alert(err.message);
@@ -48,8 +62,6 @@ function Form() {
     });
 
     console.log(myState);
-
-    console.log("pour le last name ", myState.lastname);
 
     if (e.target.name === "commentaires") {
       setTextLength(220 - e.target.value.length);
@@ -76,7 +88,6 @@ function Form() {
             name="lastname"
             value={myState.lastname}
             onChange={handleChange}
-            placeholder="Nom"
           />
         </div>
 
@@ -88,7 +99,6 @@ function Form() {
             name="firstname"
             value={myState.firstname}
             onChange={handleChange}
-            placeholder="Prenom"
           />
         </div>
 
@@ -100,7 +110,6 @@ function Form() {
             name="phone"
             value={myState.phone}
             onChange={handleChange}
-            placeholder="Telephone"
           />
         </div>
 
@@ -112,7 +121,6 @@ function Form() {
             name="email"
             value={myState.email}
             onChange={handleChange}
-            placeholder="Email"
           />
         </div>
 
@@ -146,7 +154,6 @@ function Form() {
             name="commentaires"
             value={myState.commentaires}
             onChange={handleChange}
-            placeholder="Message"
           />
         </div>
 
@@ -160,9 +167,31 @@ function Form() {
           </p>
         )}
 
-        <button className="formulaire__button-valide" type="submit">
+        {/* <button className="formulaire__button-valide" type="submit">
           Envoyé
-        </button>
+        </button> */}
+
+        {isLoading ? (
+          <img
+            className="formulaire__loading"
+            src={logoDownload}
+            alt="logo loading"
+          />
+        ) : (
+          <>
+            <button className="formulaire__button-valide" type="submit">
+              Envoyé
+            </button>
+          </>
+        )}
+
+        {messageSubmitted ? (
+          <p className="formulaire__messageSubmitted">
+            Votre demande a bien été bien en prise compte
+          </p>
+        ) : (
+          <p></p>
+        )}
       </form>
     </>
   );

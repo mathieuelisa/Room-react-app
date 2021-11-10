@@ -57,6 +57,22 @@
     }
   }
 
+  &__messageSubmitted {
+    color: whitesmoke;
+    display: flex;
+    margin: 10px auto;
+    text-align: center;
+    width: 264px;
+    font-size: 0.8em;
+    font-family: "Roboto";
+  }
+
+  &__loading {
+    display: flex;
+    height: 73px;
+    margin: 0 auto;
+    width: 76px;
+  }
   &__emailError {
     color: red;
     text-align: center;
