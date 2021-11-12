@@ -14,8 +14,8 @@ function Header({ myMenu, myLink, myMenuLogo }) {
       <NavLink className={myLink} to="/" exact>
         HOME
       </NavLink>
-      <NavLink className={myLink} to="/shop">
-        SHOP
+      <NavLink className={myLink} to="/products">
+        PRODUCTS
       </NavLink>
       <NavLink className={myLink} to="/about">
         ABOUT

@@ -4,6 +4,7 @@ import "./App.scss";
 import HomePage from "../HomePage";
 import AboutPage from "../AboutPage";
 import ContactPage from "../ContactPage";
+import ProductPage from "../Products";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -14,6 +15,10 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <HomePage />
+          </Route>
+
+          <Route path="/products" exact>
+            <ProductPage />
           </Route>
 
           <Route path="/about" exact>
