@@ -15,6 +15,8 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 // Import react reveal
 import Fade from "react-reveal/Fade";
+// Import logo
+import LogoWhite from "../../../Assets/Icons/room-white.svg";
 
 const settings = {
   dots: false,
@@ -35,6 +37,7 @@ function MainContainer() {
           myMenu="myLink__menu"
           myLink="myLink__menu-link"
           myMenuLogo="myMenuLogo"
+          logo={LogoWhite}
         />
 
         <div className="pipo">

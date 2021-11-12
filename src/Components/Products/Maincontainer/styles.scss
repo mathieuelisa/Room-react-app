@@ -4,6 +4,7 @@
 }
 
 .mainContainer__products {
+  display: flex;
   font-size: 10px;
 
   &-title {
@@ -12,11 +13,32 @@
     background-color: whitesmoke;
   }
 
+  &-secondPart {
+    width: 100%;
+  }
+
   &-productsTitle {
     display: flex;
     align-items: center;
     height: 100%;
     color: grey;
+  }
+
+  &-pictures {
+    background-color: blue;
+    height: 80vh;
+  }
+
+  &-descriptions {
+    height: 20vh;
+    background-color: green;
+
+    &-text {
+      font-size: 1.3em;
+      font-family: "Roboto";
+      width: 600px;
+      padding: 40px;
+    }
   }
 }
 

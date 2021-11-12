@@ -1,16 +1,18 @@
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../../../Assets/Icons/logo.svg";
+
+// import LogoWhite from "../../../Assets/Icons/room-white.svg";
+
 import "./styles.scss";
 
-function Header({ myMenu, myLink, myMenuLogo }) {
+function Header({ myMenu, myLink, myMenuLogo, logo }) {
   useEffect(() => {
     document.title = "ROOM | Find your happiness with our website";
   }, []);
 
   return (
     <div className={myMenu}>
-      <img className={myMenuLogo} src={Logo} alt="logo" />
+      <img className={myMenuLogo} src={logo} alt="logo" />
       <NavLink className={myLink} to="/" exact>
         HOME
       </NavLink>

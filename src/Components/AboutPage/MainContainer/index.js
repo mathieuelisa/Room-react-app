@@ -6,6 +6,8 @@ import "./styles.scss";
 import "../../../Assets/Fonts/Dolce Vita.ttf";
 // Import react reveal
 import Fade from "react-reveal/Fade";
+// Import logo
+import LogoWhite from "../../../Assets/Icons/room-white.svg";
 
 function MainContainer() {
   return (
@@ -14,6 +16,7 @@ function MainContainer() {
         myMenu="myLink__menu"
         myLink="myLink__menu-link"
         myMenuLogo="myMenuLogo"
+        logo={LogoWhite}
       />
       <div className="mainBloc-citation">
         <Fade top duration={2000}>

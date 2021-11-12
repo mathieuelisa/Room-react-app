@@ -1,5 +1,7 @@
 import Header from "../../HomePage/Header";
 import "./styles.scss";
+// Import logo
+import LogoWhite from "../../../Assets/Icons/room-white.svg";
 
 function MainContainer() {
   return (
@@ -8,6 +10,7 @@ function MainContainer() {
         myMenu="myLink__menu"
         myLink="myLink__menu-link"
         myMenuLogo="myMenuLogo"
+        logo={LogoWhite}
       />
       <div className="mainContainer__contact-title">
         <h1>Contact</h1>
