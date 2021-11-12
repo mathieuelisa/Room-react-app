@@ -14,7 +14,7 @@
   }
 
   &-secondPart {
-    width: 100%;
+    width: 80%;
   }
 
   &-productsTitle {
@@ -60,4 +60,16 @@
   margin: 0 auto;
   font-size: 7em;
   font-family: "Acens";
+}
+
+@media screen and (max-width: 945px) {
+  .mainProducts__title {
+    font-size: 5em;
+  }
+
+  .mainContainer__products-descriptions-text {
+    width: 100%;
+    text-align: justify;
+    padding: 15px;
+  }
 }
