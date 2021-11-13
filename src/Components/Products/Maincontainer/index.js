@@ -1,6 +1,7 @@
 // Import Components
 import Header from "../../HomePage/Header";
 import Cards from "../../StylesComponents/Cards";
+import CardsDescription from "../../StylesComponents/CardsDescription";
 // Import fonts
 import "../../../Assets/Fonts/Acens.ttf";
 // Import styles
@@ -11,8 +12,8 @@ import {
   myProductsImages,
   mySecondProductsImages,
 } from "../listingOfProductPage";
-
-import CardsDescription from "../../StylesComponents/CardsDescription";
+// Import react reveal
+import Fade from "react-reveal/Fade";
 
 function MainContainer() {
   return (
@@ -51,7 +52,13 @@ function MainContainer() {
             );
           })}
         </div>
-        <CardsDescription textDescription="premiere description" />
+        <Fade bottom delay={1500} duration={1500}>
+          <CardsDescription
+            textDescription="Le design industriel est tendance, et les chaises Mindi l’incarnent à merveille.
+          Vendues par paire, elles combinent un siège en bois d'olivier et des pieds en métal thermolaqué pour un style réellement saisissant. 
+          Avec leur assise incurvée et enveloppantes, elles sont parfaites pour les longues conversations d’après dîner."
+          />
+        </Fade>
 
         {/* Second part */}
         <div className="mainContainer__products-pictures">
@@ -74,7 +81,14 @@ function MainContainer() {
             );
           })}
         </div>
-        <CardsDescription textDescription="deuxiemes descriptions" />
+        <Fade duration={1500}>
+          <CardsDescription
+            textDescription="Youvu s’inspire des créations artisanales. 
+          Avec leur forme incurvée et leurs subtiles finitions ouvragées, 
+          ces chaises transformeront votre salle à manger en véritable atelier d’artiste, 
+          avec un joli twist scandinave."
+          />
+        </Fade>
       </div>
     </div>
   );

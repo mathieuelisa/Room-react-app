@@ -1,9 +1,13 @@
 import "./styles.scss";
+// Import react reveal
+import Fade from "react-reveal/Fade";
 
 function Cards({ src, alt, className, id }) {
   return (
     <div className="container-products">
-      <img className={className} id={id} src={src} alt={alt} />
+      <Fade bottom delay={500} duration={1500}>
+        <img className={className} id={id} src={src} alt={alt} />
+      </Fade>
     </div>
   );
 }
