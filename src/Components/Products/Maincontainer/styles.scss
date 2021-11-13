@@ -10,7 +10,7 @@
   &-title {
     height: 100vh;
     width: 20%;
-    background-color: whitesmoke;
+    background-color: #e2e2e2;
     position: fixed;
   }
 
@@ -24,11 +24,11 @@
     display: flex;
     align-items: center;
     height: 100%;
-    color: grey;
+    color: white;
   }
 
   &-pictures {
-    background-color: blue;
+    background-color: white;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@
 
   &-descriptions {
     height: 20vh;
-    background-color: green;
+    background-color: white;
 
     &-text {
       font-size: 1.3em;
@@ -67,6 +67,16 @@
   font-size: 7em;
   font-family: "Acens";
   transform: rotate(-180deg);
+}
+
+#firstPictures {
+  position: relative;
+  top: -30px;
+}
+
+#thirdPictures {
+  position: relative;
+  top: 30px;
 }
 
 @media screen and (max-width: 945px) {

@@ -1,10 +1,9 @@
 import "./styles.scss";
 
-function Cards({ src, title }) {
+function Cards({ src, alt, className, id }) {
   return (
     <div className="container-products">
-      <img className="container-products-images" src={src} alt="photo chaise" />
-      <h2>{title}</h2>
+      <img className={className} id={id} src={src} alt={alt} />
     </div>
   );
 }

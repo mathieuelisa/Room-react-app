@@ -6,19 +6,16 @@ const myProductsImages = [
   {
     id: 1,
     src: chair1,
-    title: "Mindi",
     description: "Description de la mindi",
   },
   {
     id: 2,
     src: chair2,
-    title: "Mindi",
     description: "Description de la mindi",
   },
   {
     id: 3,
     src: chair3,
-    title: "Mindi",
     description: "Description de la mindi",
   },
 ];

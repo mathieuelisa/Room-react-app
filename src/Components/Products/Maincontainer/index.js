@@ -26,8 +26,23 @@ function MainContainer() {
       </div>
       <div className="mainContainer__products-secondPart">
         <div className="mainContainer__products-pictures">
-          {myProductsImages.map((elements) => {
-            return <Cards src={elements.src} title={elements.title} />;
+          {myProductsImages.map((elements, index) => {
+            return (
+              <Cards
+                key={index}
+                src={elements.src}
+                className="container-products-images"
+                id={
+                  index === 0
+                    ? "firstPictures"
+                    : index === 1
+                    ? "secondPictures"
+                    : index === 2
+                    ? "thirdPictures"
+                    : ""
+                }
+              />
+            );
           })}
         </div>
         <div className="mainContainer__products-descriptions">
