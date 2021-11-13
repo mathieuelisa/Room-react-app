@@ -7,7 +7,12 @@ import "../../../Assets/Fonts/Acens.ttf";
 import "./styles.scss";
 // Import logo Header
 import LogoBlack from "../../../Assets/Icons/room-black.svg";
-import myProductsImages from "../listingOfProductPage";
+import {
+  myProductsImages,
+  mySecondProductsImages,
+} from "../listingOfProductPage";
+
+import CardsDescription from "../../StylesComponents/CardsDescription";
 
 function MainContainer() {
   return (
@@ -25,6 +30,7 @@ function MainContainer() {
         </div>
       </div>
       <div className="mainContainer__products-secondPart">
+        {/* First part */}
         <div className="mainContainer__products-pictures">
           {myProductsImages.map((elements, index) => {
             return (
@@ -45,13 +51,30 @@ function MainContainer() {
             );
           })}
         </div>
-        <div className="mainContainer__products-descriptions">
-          <p className="mainContainer__products-descriptions-text">
-            Specialisation: Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua.
-          </p>
+        <CardsDescription textDescription="premiere description" />
+
+        {/* Second part */}
+        <div className="mainContainer__products-pictures">
+          {mySecondProductsImages.map((elements, index) => {
+            return (
+              <Cards
+                key={index}
+                src={elements.src}
+                className="container-products-images"
+                id={
+                  index === 0
+                    ? "firstPictures"
+                    : index === 1
+                    ? "secondPictures"
+                    : index === 2
+                    ? "thirdPictures"
+                    : ""
+                }
+              />
+            );
+          })}
         </div>
+        <CardsDescription textDescription="deuxiemes descriptions" />
       </div>
     </div>
   );
