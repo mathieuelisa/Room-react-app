@@ -1,8 +1,9 @@
 .container-products {
   height: 60%;
-  object-fit: cover;
 
   &-images {
     height: 100%;
+    border: 1px solid grey;
+    object-fit: cover;
   }
 }
