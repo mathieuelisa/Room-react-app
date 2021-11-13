@@ -1,6 +1,4 @@
 import "./styles.scss";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 // Import Icons and Img
 import arrowLogo from "../../../Assets/Icons/icon-arrow.svg";
 //Import fonts
@@ -10,8 +8,11 @@ import "../../../Assets/Fonts/Hijrnotes.ttf";
 // Import components
 import Header from "../Header";
 import images from "../myImage";
-// Import component React slick Carroussel
+// Import components React slick Carroussel
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+// Import components react router
 import { Link } from "react-router-dom";
 // Import react reveal
 import Fade from "react-reveal/Fade";

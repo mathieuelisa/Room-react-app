@@ -3,8 +3,9 @@ import { useState } from "react";
 import "./styles.scss";
 // Import Input validator
 import validator from "validator";
+// Import db from firebase
 import { db } from "../../../firebase";
-
+// Import loader
 import logoDownload from "../../../Assets/Icons/loader.gif";
 
 function Form() {

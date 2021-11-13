@@ -27,6 +27,9 @@
   &-pictures {
     background-color: blue;
     height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   &-descriptions {
@@ -60,6 +63,7 @@
   margin: 0 auto;
   font-size: 7em;
   font-family: "Acens";
+  transform: rotate(-180deg);
 }
 
 @media screen and (max-width: 945px) {

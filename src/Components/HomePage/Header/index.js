@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
-// import LogoWhite from "../../../Assets/Icons/room-white.svg";
-
 import "./styles.scss";
 
 function Header({ myMenu, myLink, myMenuLogo, logo }) {

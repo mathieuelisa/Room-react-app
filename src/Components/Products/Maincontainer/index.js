@@ -1,11 +1,13 @@
-// Import Component
+// Import Components
 import Header from "../../HomePage/Header";
+import Cards from "../../StylesComponents/Cards";
 // Import fonts
 import "../../../Assets/Fonts/Acens.ttf";
 // Import styles
 import "./styles.scss";
-// Import logo
+// Import logo Header
 import LogoBlack from "../../../Assets/Icons/room-black.svg";
+import myProductsImages from "../listingOfProductPage";
 
 function MainContainer() {
   return (
@@ -23,7 +25,11 @@ function MainContainer() {
         </div>
       </div>
       <div className="mainContainer__products-secondPart">
-        <div className="mainContainer__products-pictures"></div>
+        <div className="mainContainer__products-pictures">
+          {myProductsImages.map((elements) => {
+            return <Cards src={elements.src} title={elements.title} />;
+          })}
+        </div>
         <div className="mainContainer__products-descriptions">
           <p className="mainContainer__products-descriptions-text">
             Specialisation: Lorem ipsum dolor sit amet, consectetur adipiscing
