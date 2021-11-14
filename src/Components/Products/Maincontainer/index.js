@@ -52,7 +52,7 @@ function MainContainer() {
             );
           })}
         </div>
-        <Fade bottom delay={1500} duration={1500}>
+        <Fade delay={2000} duration={2000}>
           <CardsDescription
             textDescription="Le design industriel est tendance, et les chaises Mindi l’incarnent à merveille.
           Vendues par paire, elles combinent un siège en bois d'olivier et des pieds en métal thermolaqué pour un style réellement saisissant. 
@@ -81,7 +81,7 @@ function MainContainer() {
             );
           })}
         </div>
-        <Fade duration={1500}>
+        <Fade delay={500} duration={2000}>
           <CardsDescription
             textDescription="Youvu s’inspire des créations artisanales. 
           Avec leur forme incurvée et leurs subtiles finitions ouvragées, 

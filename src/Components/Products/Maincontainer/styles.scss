@@ -29,18 +29,19 @@
 
   &-pictures {
     background-color: white;
-    height: 80vh;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    top: 49px;
+    position: relative;
   }
 
   &-descriptions {
     height: 20vh;
-    background-color: white;
 
     &-text {
-      font-size: 1.3em;
+      font-size: 1.5em;
       font-family: "Roboto";
       padding: 40px;
     }
@@ -53,9 +54,11 @@
   text-decoration: none;
   font-size: 1em;
   font-family: "Moonglade";
+  bottom: -7px;
+  position: relative;
 
   &:hover {
-    color: red;
+    color: rgb(159, 159, 159);
   }
 }
 
@@ -78,14 +81,32 @@
   top: 30px;
 }
 
-@media screen and (max-width: 945px) {
+@media screen and (max-width: 1145px) {
   .mainProducts__title {
     font-size: 5em;
+  }
+
+  .mainContainer__products-descriptions {
+    height: 250px;
+    position: relative;
+    top: 202px;
+    margin-bottom: 10px;
   }
 
   .mainContainer__products-descriptions-text {
     width: 100%;
     text-align: justify;
     padding: 15px;
+  }
+
+  .mainContainer__products-pictures {
+    flex-direction: column;
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 170px;
   }
 }
