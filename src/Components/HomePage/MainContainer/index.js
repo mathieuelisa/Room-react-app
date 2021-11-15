@@ -28,6 +28,7 @@ const settings = {
   autoplay: true,
   speed: 2000,
   autoplaySpeed: 6000,
+  arrows: false,
 };
 
 function MainContainer() {
