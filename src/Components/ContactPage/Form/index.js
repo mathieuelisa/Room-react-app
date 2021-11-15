@@ -72,7 +72,7 @@ function Form() {
       if (validator.isEmail(e.target.value)) {
         setEmailError("");
       } else {
-        setEmailError("Email non valide");
+        setEmailError("Email non valide !");
       }
     }
   }
@@ -167,10 +167,6 @@ function Form() {
             {textLength} characters remaining
           </p>
         )}
-
-        {/* <button className="formulaire__button-valide" type="submit">
-          Envoyé
-        </button> */}
 
         {isLoading ? (
           <img

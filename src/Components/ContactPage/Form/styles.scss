@@ -1,6 +1,6 @@
 .formulaire {
   width: 50%;
-  height: 850px;
+  height: 880px;
   padding-top: 10px;
   margin: auto;
   background-color: black;
@@ -12,6 +12,7 @@
 
     &-shop {
       display: flex;
+      flex-direction: column;
       margin: 10px;
     }
 
@@ -44,6 +45,8 @@
       height: 20px;
       align-self: end;
       margin-left: 10px;
+      margin: 0 auto;
+      margin-top: 30px;
     }
 
     &-textAreaInput {
@@ -76,6 +79,7 @@
   &__emailError {
     color: red;
     text-align: center;
+    font-size: 0.8em;
   }
 
   &__allInputs {
@@ -91,10 +95,11 @@
 
   &__textArea {
     width: 75%;
+    height: 115px;
     font-family: "Roboto";
     line-height: 23px;
     margin-top: 30px;
-    padding: 20px;
+    padding: 10px;
     font-size: 0.8em;
     border-radius: 5px;
     font-weight: bold;
