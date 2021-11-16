@@ -1,0 +1,55 @@
+.footer {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  background-color: red;
+}
+
+.mainFooter__container {
+  display: flex;
+  margin: 0 auto;
+  background-color: blue;
+  width: 70%;
+  height: 90%;
+}
+
+.mainFooter__container-first {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: green;
+  width: 50%;
+  height: 100%;
+
+  &-title {
+    margin-bottom: 10px;
+    font-family: "Moonglade";
+    font-size: 1.2em;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: black;
+    width: 155px;
+    font-family: "Roboto";
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.mainFooter__container-second {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: yellow;
+  width: 50%;
+  height: 100%;
+
+  &-title {
+    margin-bottom: 10px;
+    font-family: "Moonglade";
+    font-size: 1.2em;
+  }
+}

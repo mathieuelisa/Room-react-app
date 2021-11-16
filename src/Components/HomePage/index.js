@@ -1,6 +1,7 @@
 import MainContainer from "./MainContainer";
 import SecondContainer from "./SecondContainer";
 import ThirdContainer from "./ThirdContainer";
+import Footer from "./Footer";
 
 import "./styles.scss";
 
@@ -10,6 +11,7 @@ function HomePage() {
       <MainContainer />
       <SecondContainer />
       <ThirdContainer />
+      <Footer />
     </div>
   );
 }

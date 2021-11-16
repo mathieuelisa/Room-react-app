@@ -64,7 +64,7 @@
 }
 
 #green-title {
-  color: #206f36;
+  color: #16652b;
 }
 
 #placement {
@@ -103,4 +103,10 @@
 .myMenuLogo {
   height: 20px;
   margin-left: 15px;
+}
+
+@media screen and (max-width: 945px) {
+  .home__first-container--secondBloc-text {
+    font-size: 1em;
+  }
 }

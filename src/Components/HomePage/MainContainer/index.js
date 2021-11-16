@@ -74,8 +74,8 @@ function MainContainer() {
 
         <div id="placement">
           <p className="shop">
-            <Link id="shopnow" to="/shop">
-              SHOP NOW
+            <Link id="shopnow" to="/products">
+              PRODUCTS
             </Link>
           </p>
 
