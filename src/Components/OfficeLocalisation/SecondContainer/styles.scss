@@ -1,0 +1,13 @@
+.location__second-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  height: 90vh;
+
+  &-general {
+    height: 70%;
+    width: 80%;
+    background-color: yellow;
+  }
+}

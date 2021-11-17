@@ -7,7 +7,7 @@
 .mainFooter__container {
   display: flex;
   margin-left: 85px;
-  width: 40%;
+  width: 30%;
   height: 90%;
 }
 
@@ -48,5 +48,12 @@
     margin-bottom: 10px;
     font-family: "Moonglade";
     font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .mainFooter__container {
+    width: 60%;
+    margin-left: 45px;
   }
 }
