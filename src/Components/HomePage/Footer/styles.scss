@@ -1,15 +1,13 @@
 .footer {
   display: flex;
   align-items: center;
-  height: 300px;
-  background-color: red;
+  height: 200px;
 }
 
 .mainFooter__container {
   display: flex;
-  margin: 0 auto;
-  background-color: blue;
-  width: 70%;
+  margin-left: 85px;
+  width: 40%;
   height: 90%;
 }
 
@@ -17,14 +15,13 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: green;
   width: 50%;
   height: 100%;
 
   &-title {
     margin-bottom: 10px;
     font-family: "Moonglade";
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
 
   &-link {
@@ -32,9 +29,10 @@
     color: black;
     width: 155px;
     font-family: "Roboto";
+    font-size: 0.6em;
 
     &:hover {
-      color: red;
+      color: grey;
     }
   }
 }
@@ -43,13 +41,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: yellow;
   width: 50%;
   height: 100%;
 
   &-title {
     margin-bottom: 10px;
     font-family: "Moonglade";
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
 }

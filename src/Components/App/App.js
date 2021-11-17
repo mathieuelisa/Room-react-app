@@ -5,6 +5,7 @@ import HomePage from "../HomePage";
 import AboutPage from "../AboutPage";
 import ContactPage from "../ContactPage";
 import ProductPage from "../Products";
+import OfficeLocation from "../OfficeLocalisation";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -27,6 +28,10 @@ function App() {
 
           <Route path="/contact" exact>
             <ContactPage />
+          </Route>
+
+          <Route path="/location" exact>
+            <OfficeLocation />
           </Route>
         </Switch>
       </BrowserRouter>

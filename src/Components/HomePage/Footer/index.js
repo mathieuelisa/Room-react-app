@@ -13,6 +13,9 @@ function Footer() {
           <Link className="mainFooter__container-first-link" to="">
             Mentions legales
           </Link>
+          <Link className="mainFooter__container-first-link" to="/location">
+            Nos bureaux
+          </Link>
         </div>
 
         <div className="mainFooter__container-second">
