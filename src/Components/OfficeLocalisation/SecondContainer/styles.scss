@@ -2,12 +2,49 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
   height: 90vh;
 
   &-general {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     height: 70%;
-    width: 80%;
-    background-color: yellow;
+    width: 95%;
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 300px;
+    font-family: "Roboto";
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  &-map {
+    width: 60%;
+    height: 370px;
+    background-color: pink;
+  }
+}
+
+.store__detail-title,
+.store__detail-adress,
+.store__detail-hours,
+.store__detail-phoneNumber {
+  margin-bottom: 7px;
+}
+
+.store__detail-title {
+  font-family: "Moonglade";
+}
+
+.store__detail-mail {
+  cursor: pointer;
+
+  &:hover {
+    color: red;
   }
 }
