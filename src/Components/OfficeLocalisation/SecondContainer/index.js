@@ -26,6 +26,7 @@ function SecondContainer() {
           center={[48.8618, 2.3718]}
           zoom={17}
           scrollWheelZoom={false}
+          attributionControl={false}
         >
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

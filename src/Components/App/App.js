@@ -6,6 +6,7 @@ import AboutPage from "../AboutPage";
 import ContactPage from "../ContactPage";
 import ProductPage from "../Products";
 import OfficeLocation from "../OfficeLocalisation";
+import MentionsLegales from "../MentionsLegales";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -24,6 +25,10 @@ function App() {
 
           <Route path="/about" exact>
             <AboutPage />
+          </Route>
+
+          <Route path="/mentionsLegales" exact>
+            <MentionsLegales />
           </Route>
 
           <Route path="/contact" exact>

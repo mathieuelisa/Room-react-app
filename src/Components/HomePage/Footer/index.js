@@ -10,7 +10,10 @@ function Footer() {
           <Link className="mainFooter__container-first-link" to="">
             Contact professionnel
           </Link>
-          <Link className="mainFooter__container-first-link" to="">
+          <Link
+            className="mainFooter__container-first-link"
+            to="/mentionsLegales"
+          >
             Mentions legales
           </Link>
           <Link className="mainFooter__container-first-link" to="/location">
