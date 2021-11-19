@@ -1,4 +1,6 @@
 import "./styles.scss";
+// Import React Leaflet
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 function SecondContainer() {
   return (
@@ -19,11 +21,21 @@ function SecondContainer() {
           <p className="store__detail-mail">room@service-client.com</p>
         </div>
 
-        <div className="location__second-container-map">
-          <p>Map</p>
-        </div>
+        {/* <div className="location__second-container-map"> */}
+        <MapContainer center={[51.505, -0.09]} zoom={9} scrollWheelZoom={false}>
+          <TileLayer
+            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={[51.505, -0.09]}>
+            <Popup>
+              Test <br /> Easily customizable.
+            </Popup>
+          </Marker>
+        </MapContainer>
       </div>
     </div>
+    // </div>
   );
 }
 
