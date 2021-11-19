@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 
 import "./styles.scss";
 
@@ -8,9 +8,15 @@ function Header({ myMenu, myLink, myMenuLogo, logo }) {
     document.title = "ROOM | Find your happiness with our website";
   }, []);
 
+  const history = useHistory();
+  const Redirection = () => {
+    let url = "/";
+    history.push(url);
+  };
+
   return (
     <div className={myMenu}>
-      <img className={myMenuLogo} src={logo} alt="logo" />
+      <img className={myMenuLogo} src={logo} alt="logo" onClick={Redirection} />
       <NavLink className={myLink} to="/" exact>
         HOME
       </NavLink>
