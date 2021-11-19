@@ -53,3 +53,28 @@
   height: 400px;
   width: 60%;
 }
+
+.leaflet-popup-content-wrapper {
+  color: white;
+  background-color: #3f3f3fa6;
+  font-family: "Moonglade";
+}
+
+@media screen and (max-width: 945px) {
+  .location__second-container-general {
+    flex-direction: column;
+    height: 90vh;
+    align-items: none;
+  }
+
+  .location__second-container-text {
+    width: 75%;
+    height: 39%;
+    font-size: 0.7em;
+    border: none;
+  }
+
+  .leaflet-container {
+    width: 100%;
+  }
+}
