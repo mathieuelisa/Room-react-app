@@ -1,3 +1,4 @@
+import Footer from "../HomePage/Footer";
 import MainContainer from "./MainContainer";
 import SecondContainer from "./SecondContainer";
 
@@ -6,6 +7,7 @@ function MentionsLegales() {
     <div>
       <MainContainer />
       <SecondContainer />
+      <Footer />
     </div>
   );
 }

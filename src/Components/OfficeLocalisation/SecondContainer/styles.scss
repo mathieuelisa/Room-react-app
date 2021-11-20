@@ -26,7 +26,6 @@
   &-map {
     width: 60%;
     height: 370px;
-    background-color: pink;
   }
 }
 
@@ -43,9 +42,10 @@
 
 .store__detail-mail {
   cursor: pointer;
+  transition: 1s;
 
   &:hover {
-    color: red;
+    color: grey;
   }
 }
 
