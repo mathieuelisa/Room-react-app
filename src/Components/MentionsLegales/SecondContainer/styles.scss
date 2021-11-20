@@ -1,0 +1,22 @@
+.mentions__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 80px;
+  width: 77%;
+  margin: 0 auto;
+
+  &-sectionTitle {
+    margin: 10px 0 10px 0;
+    font-family: "Moonglade";
+  }
+
+  &-sectionText {
+    font-family: "Roboto";
+    font-size: 1em;
+  }
+}
+
+#last-sectionText {
+  margin-bottom: 80px;
+}
