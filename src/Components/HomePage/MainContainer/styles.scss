@@ -64,7 +64,7 @@
 }
 
 #green-title {
-  color: #16652b;
+  color: #1fa51387;
 }
 
 #placement {
@@ -93,9 +93,10 @@
     font-family: "Moonglade";
     bottom: -7px;
     position: relative;
+    transition: 1s;
 
     &:hover {
-      color: grey;
+      color: lightgrey;
     }
   }
 }

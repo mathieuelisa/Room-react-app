@@ -55,9 +55,10 @@
   font-family: "Moonglade";
   bottom: -7px;
   position: relative;
+  transition: 1s;
 
   &:hover {
-    color: rgb(159, 159, 159);
+    color: lightgrey;
   }
 }
 

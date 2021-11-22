@@ -23,13 +23,25 @@ function Footer() {
 
         <div className="mainFooter__container-second">
           <h2 className="mainFooter__container-second-title">FOLLOW</h2>
-          <Link className="mainFooter__container-first-link" to="">
+          <Link
+            className="mainFooter__container-first-link"
+            to={{ pathname: "https://fr-fr.facebook.com/" }}
+            target="_blank"
+          >
             Facebook
           </Link>
-          <Link className="mainFooter__container-first-link" to="">
+          <Link
+            className="mainFooter__container-first-link"
+            to={{ pathname: "https://www.instagram.com/" }}
+            target="_blank"
+          >
             Instagram
           </Link>
-          <Link className="mainFooter__container-first-link" to="">
+          <Link
+            className="mainFooter__container-first-link"
+            to={{ pathname: "https://twitter.com/" }}
+            target="_blank"
+          >
             Twitter
           </Link>
         </div>
