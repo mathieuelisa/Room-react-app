@@ -7,10 +7,16 @@ import ContactPage from "../ContactPage";
 import ProductPage from "../Products";
 import OfficeLocation from "../OfficeLocalisation";
 import MentionsLegales from "../MentionsLegales";
-
+// Import React Router
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+// React Hooks
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "ROOM | Find your happiness with our website";
+  }, []);
+
   return (
     <div className="App">
       <BrowserRouter>

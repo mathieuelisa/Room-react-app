@@ -1,3 +1,4 @@
+// Import style
 import "./styles.scss";
 
 function SecondContainer() {

@@ -1,4 +1,6 @@
+// Import Components
 import Header from "../../HomePage/Header";
+// Import styles
 import "./styles.scss";
 // Import logo
 import LogoWhite from "../../../Assets/Icons/room-white.svg";

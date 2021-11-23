@@ -1,13 +1,8 @@
-import { useEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-
+// Import styles
 import "./styles.scss";
 
 function Header({ myMenu, myLink, myMenuLogo, logo }) {
-  useEffect(() => {
-    document.title = "ROOM | Find your happiness with our website";
-  }, []);
-
   const history = useHistory();
   const Redirection = () => {
     let url = "/";

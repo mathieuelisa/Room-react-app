@@ -1,5 +1,5 @@
 import "./styles.scss";
-// Import component
+// Import Components
 import Form from "../Form";
 
 function ThirdContainer() {

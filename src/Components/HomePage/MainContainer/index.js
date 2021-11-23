@@ -1,11 +1,12 @@
 import "./styles.scss";
 // Import Icons and Img
 import arrowLogo from "../../../Assets/Icons/icon-arrow.svg";
+import LogoWhite from "../../../Assets/Icons/room-white.svg";
 //Import fonts
 import "../../../Assets/Fonts/RobotoThing.ttf";
 import "../../../Assets/Fonts/Moonglade.ttf";
 import "../../../Assets/Fonts/Hijrnotes.ttf";
-// Import components
+// Import Components
 import Header from "../Header";
 import images from "../myImage";
 // Import components React slick Carroussel
@@ -16,8 +17,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 // Import react reveal
 import Fade from "react-reveal/Fade";
-// Import logo
-import LogoWhite from "../../../Assets/Icons/room-white.svg";
 
 const settings = {
   dots: false,

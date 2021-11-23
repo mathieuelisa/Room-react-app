@@ -1,4 +1,6 @@
+// Import React Router
 import { Link } from "react-router-dom";
+// Import styles
 import "./styles.scss";
 
 function Footer() {
