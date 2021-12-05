@@ -7,6 +7,7 @@ import ContactPage from "../ContactPage";
 import ProductPage from "../Products";
 import OfficeLocation from "../OfficeLocalisation";
 import MentionsLegales from "../MentionsLegales";
+import ErrorPage from "../ErrorPage";
 // Import React Router
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 // React Hooks
@@ -45,6 +46,10 @@ function App() {
 
           <Route path="/location" exact>
             <OfficeLocation />
+          </Route>
+
+          <Route>
+            <ErrorPage />
           </Route>
         </Switch>
       </BrowserRouter>
