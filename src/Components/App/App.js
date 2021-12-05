@@ -11,6 +11,7 @@ import MentionsLegales from "../MentionsLegales";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 // React Hooks
 import { useEffect } from "react";
+import ScrollToTop from "../Config/ScrollToTheTop";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Switch>
           <Route path="/" exact>
             <HomePage />
