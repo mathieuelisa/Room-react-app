@@ -34,10 +34,10 @@
   }
 
   &__label {
+    display: flex;
     margin-left: 60px;
     margin-top: 40px;
     font-family: "Roboto";
-    display: flex;
     color: whitesmoke;
     font-size: 1em;
 
@@ -47,14 +47,15 @@
       margin-left: 10px;
       margin: 0 auto;
       margin-top: 30px;
+      border-radius: 5px;
     }
 
     &-textAreaInput {
+      display: flex;
       align-self: start;
       margin-left: 60px;
       margin-top: 40px;
       font-family: "Roboto";
-      display: flex;
       color: whitesmoke;
       font-size: 1em;
     }
@@ -87,10 +88,15 @@
     margin: 13px 0 15px 59px;
     font-family: "Roboto";
     width: 75%;
+    padding: 5px;
     background-color: transparent;
     border-bottom: 1px solid whitesmoke;
     color: whitesmoke;
     font-size: 0.8em;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__textArea {

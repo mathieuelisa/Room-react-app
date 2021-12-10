@@ -1,5 +1,5 @@
 import "./styles.scss";
-// Import React Leaflet
+
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 function SecondContainer() {
@@ -21,7 +21,6 @@ function SecondContainer() {
           <p className="store__detail-mail">room@service-client.com</p>
         </div>
 
-        {/* <div className="location__second-container-map"> */}
         <MapContainer
           center={[48.8618, 2.3718]}
           zoom={17}
@@ -40,7 +39,6 @@ function SecondContainer() {
         </MapContainer>
       </div>
     </div>
-    // </div>
   );
 }
 

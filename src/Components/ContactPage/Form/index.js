@@ -38,7 +38,6 @@ function Form() {
         commentaires: myState.commentaires,
       })
       .then(() => {
-        console.log("Message has been submitted");
         setMessageSubmitted(true);
         setIsLoading(false);
         setMyState({
@@ -62,8 +61,6 @@ function Form() {
       ...myState,
       [e.target.name]: e.target.value,
     });
-
-    console.log(myState);
 
     if (e.target.name === "commentaires") {
       setTextLength(220 - e.target.value.length);

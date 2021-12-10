@@ -3,7 +3,7 @@ import MainContainer from "./MainContainer";
 import SecondContainer from "./SecondContainer";
 import ThirdContainer from "./ThirdContainer";
 import Footer from "./Footer";
-// Import style
+
 import "./styles.scss";
 
 function HomePage() {
