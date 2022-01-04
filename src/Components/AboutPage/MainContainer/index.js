@@ -3,7 +3,7 @@ import Header from "../../HomePage/Header";
 // Import styles
 import "./styles.scss";
 // Import Fonts
-import "../../../Assets/Fonts/Dolce Vita.ttf";
+import "../../../Assets/Fonts/DolceVita.ttf";
 // Import react reveal
 import Fade from "react-reveal/Fade";
 // Import logo

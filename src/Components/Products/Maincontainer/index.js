@@ -14,8 +14,15 @@ import {
 } from "../listingOfProductPage";
 // Import react reveal
 import Fade from "react-reveal/Fade";
+import { useEffect, useState } from "react";
 
 function MainContainer() {
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    document.fonts.load("12px Acens").then(() => setIsReady(true));
+  }, []);
+
   return (
     <div className="mainContainer__products">
       <Header
@@ -26,9 +33,11 @@ function MainContainer() {
       />
 
       <div className="mainContainer__products-title">
-        <div className="mainContainer__products-productsTitle">
-          <h2 className="mainProducts__title">INDOOR</h2>
-        </div>
+        {isReady && (
+          <div className="mainContainer__products-productsTitle">
+            <h2 className="mainProducts__title">INDOOR</h2>
+          </div>
+        )}
       </div>
       <div className="mainContainer__products-secondPart">
         {/* First part */}

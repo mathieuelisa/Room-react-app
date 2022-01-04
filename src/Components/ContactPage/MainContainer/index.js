@@ -4,8 +4,16 @@ import Header from "../../HomePage/Header";
 import "./styles.scss";
 // Import logo
 import LogoWhite from "../../../Assets/Icons/room-white.svg";
+import "../../../Assets/Fonts/DolceVita.ttf";
+import { useEffect, useState } from "react";
 
 function MainContainer() {
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    document.fonts.load("12px DolceVita").then(() => setIsReady(true));
+  }, []);
+
   return (
     <div className="mainContainer__contact">
       <Header
@@ -14,9 +22,11 @@ function MainContainer() {
         myMenuLogo="myMenuLogo"
         logo={LogoWhite}
       />
-      <div className="mainContainer__contact-title">
-        <h1>Contact</h1>
-      </div>
+      {isReady && (
+        <div className="mainContainer__contact-title">
+          <h1>Contact</h1>
+        </div>
+      )}
     </div>
   );
 }
