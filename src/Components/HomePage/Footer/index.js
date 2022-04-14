@@ -47,6 +47,15 @@ function Footer() {
             Twitter
           </Link>
         </div>
+
+        <div className="mainFooter__container-second">
+          <h2 className="mainFooter__container-second-title">
+            QUESTIONS&REPONSES
+          </h2>
+          <Link className="mainFooter__container-first-link" to="/questions">
+            Nos questions
+          </Link>
+        </div>
       </div>
     </div>
   );

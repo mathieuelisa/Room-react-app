@@ -13,6 +13,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 // React Hooks
 import { useEffect } from "react";
 import ScrollToTop from "../Config/ScrollToTheTop";
+import Questions from "../Questions";
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,10 @@ function App() {
 
           <Route path="/products" exact>
             <ProductPage />
+          </Route>
+
+          <Route path="/questions" exact>
+            <Questions />
           </Route>
 
           <Route path="/about" exact>
