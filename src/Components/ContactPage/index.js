@@ -1,4 +1,3 @@
-import "./styles.scss";
 // Import components
 import MainContainer from "./MainContainer";
 import SecondContainer from "./SecondContainer";
