@@ -1,22 +1,43 @@
 .questions__container{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
+
+    &-questions{
+        text-align: center;
+    }
 
     &-each{
     display: flex;
+    top: 30%;
     align-items: center;
-    height: 100px;
-    background-color: lightblue;
-    width: 505px;
-    justify-content: center;
-    flex-direction: column;
+    height: 65px;
+    box-shadow: 1px 1px 20px lightgrey;
     cursor: pointer;
+    background-color: lightgray;
+    margin: 4px;
+    width: 70%;
+    justify-content: space-between;
+    padding:  0 15px;
     }
 
     &-answers{
-        text-align: center;
+    text-align: center;
+    text-align: center;
+    height: auto;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .questions__container-each, .questions__container-answers{
+        font-size: 0.8em;
     }
 }

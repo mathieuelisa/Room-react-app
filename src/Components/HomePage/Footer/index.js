@@ -53,7 +53,7 @@ function Footer() {
             QUESTIONS&REPONSES
           </h2>
           <Link className="mainFooter__container-first-link" to="/questions">
-            Nos questions
+            Vos questions
           </Link>
         </div>
       </div>

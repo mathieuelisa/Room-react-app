@@ -1,23 +1,23 @@
 const dataQuestionsAnswers = [
   {
-    questions: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    questions: "Comment puis-je obtenir le catalogue de ROOM ?",
     answer:
-      "Vivamus ultricies, eros sed tempus auctor, ligula ipsum scelerisque eros, ut tempor nulla nisl a nibh.",
+      "Il existe plusieurs solutions. Vous pouvez récupérer un catalogue papier dans votre magasin le plus proche de chez vous. Enfin, vous pouvez découvrir tous nos meubles, canapés et fauteuils et literie en naviguant sur notre site internet.",
   },
   {
-    questions: "Nunc luctus dapibus pharetra.?",
+    questions: "Assurez-vous la reprise des anciens meubles ?",
     answer:
-      "Cras felis ligula, iaculis ac euismod eu, porta at sem. Sed auctor augue eleifend justo egestas",
+      "Oui, nous proposons un service de reprise de vos vieux meubles à la livraison de vos meubles neufs. Pour tous renseignements, veuillez contacter votre enseigne Room la plus proche.",
   },
   {
-    questions: "Ut in libero congue, sodales erat vitae, consequat sem.?",
+    questions: "Comment entretenir mon mobilier en bois ?",
     answer:
-      "Suspendisse molestie, dolor sed vehicula posuere, nibh eros vestibulum purus, vitae vulputate sem est ac dui.",
+      "Il est primordial de préserver votre mobilier en bois et placage de la lumière du soleil. Pour éviter toute marque du à l’éclaircissement du bois, ne posez pas d’objet sur votre mobilier durant les 6 à 8 premières semaines.",
   },
   {
-    questions: "Maecenas blandit vel sapien nec tristique?",
+    questions: "Combien de temps sont garanti vos produits?",
     answer:
-      "Suspendisse quis facilisis magna. Integer ante ex, hendrerit et varius a, eleifend id enim.",
+      "Chez ROOM, tous nos produits : canapés, meubles d’intérieur et literie, sont garantis 2 ans.",
   },
 ];
 
