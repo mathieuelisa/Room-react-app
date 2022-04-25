@@ -49,9 +49,7 @@ function Footer() {
         </div>
 
         <div className="mainFooter__container-second">
-          <h2 className="mainFooter__container-second-title">
-            QUESTIONS&REPONSES
-          </h2>
+          <h2 className="mainFooter__container-second-title">Q & R</h2>
           <Link className="mainFooter__container-first-link" to="/questions">
             Vos questions
           </Link>

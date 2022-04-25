@@ -35,9 +35,10 @@ function SecondContainer() {
           </div>
 
           {clicked === index ? (
-            <div className="questions__container-answers">
-              <p>{element.answer}</p>
-            </div>
+            <div
+              className="questions__container-answers"
+              dangerouslySetInnerHTML={{ __html: element.answer }}
+            ></div>
           ) : null}
         </>
       ))}

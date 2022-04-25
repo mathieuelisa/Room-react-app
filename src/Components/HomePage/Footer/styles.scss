@@ -1,12 +1,12 @@
 .footer {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 200px;
 }
 
 .mainFooter__container {
   display: flex;
-  margin-left: 85px;
   width: 30%;
   height: 90%;
 }
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   height: 100%;
 
   &-title {
@@ -41,7 +41,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 30%;
   height: 100%;
 
   &-title {
@@ -54,6 +54,5 @@
 @media screen and (max-width: 945px) {
   .mainFooter__container {
     width: 60%;
-    margin-left: 45px;
   }
 }
